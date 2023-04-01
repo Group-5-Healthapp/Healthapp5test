@@ -26,9 +26,9 @@ pipeline{
                 sh 'ls'
             }
         }
-        stage('6-copy'){
+        stage('6-word count'){
             steps{
-                sh 'cp'
+                sh 'wc -l'
             }
         }stage('7-loginfo'){
             steps{
@@ -42,7 +42,7 @@ pipeline{
         }
         stage('9-message'){
             steps{
-                sh echo "Welcome to Health app Group 5"
+                sh 'Welcome to Health app Group 5'
             }
         }
     }
